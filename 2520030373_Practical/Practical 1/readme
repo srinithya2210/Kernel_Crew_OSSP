@@ -1,1 +1,6 @@
-
+Command 				Purpose
+uname		        Displays basic information about the operating system.
+lscpu	          Displays detailed information about the CPU and its architecture.
+lsblk	          Lists the available block devices such as hard disks and partitions.
+ps	            Displays the currently running processes and their process IDs.
+top	            Continuously displays running processes along with CPU and memory usage.
