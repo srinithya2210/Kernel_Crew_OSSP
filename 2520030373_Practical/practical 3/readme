@@ -1,0 +1,4 @@
+a) Parent and Child Process using fork()
+The fork() system call creates a child process from the parent process. Each process has its own PID, while PPID tells us the ID of its parent. Both parent and child execute separately after fork().
+b) Process State Transitions
+A process moves through different states like Ready, Running, Waiting, and Terminated while executing. Linux tools like ps, top, and /proc are used to observe the process and its current state.
