@@ -1,0 +1,20 @@
+wait():-makes the parent process wait until any one of its child processes finishes.
+wait(NULL);
+The parent does not continue until one child terminates.We cannot choose which particular child wait() waits for.
+
+waitpid():-is used when we want the parent to wait for a specific child process.
+waitpid(pid[2], NULL, 0);
+Here, the parent specifically waits for Child 3.
+
+Difference between wait and waitdpid:-
+wait()                                  waitpid()
+Waits for any child process             Waits for a specific child
+Cannot select a particular child        Can select a particular child using PID
+Simpler to use                          Gives more control
+Returns when any child terminates       Returns when the specified child terminates
+
+Zombie Process – Short Theory
+A zombie process is a child process that has finished execution, but its parent has not collected its exit status.
+- It remains in the process table.
+- It can be created when the parent does not use wait() or waitpid().
+- Calling wait() or waitpid() removes the zombie by collecting the child's status.
