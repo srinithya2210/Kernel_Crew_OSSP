@@ -1,0 +1,4 @@
+a) Producer-Consumer using Pipe
+A pipe is used to send data from one process to another. Here, the parent is the producer and sends data through the pipe. The child is the consumer and receives the data. pipe() creates the pipe and fork() creates the child process.
+b) ls -l | grep ".c"
+The program uses a pipe to connect two commands. ls -l gives the list of files, and grep ".c" selects only the files containing .c. fork() creates processes, dup2() connects them through the pipe, and exec() runs the commands.
