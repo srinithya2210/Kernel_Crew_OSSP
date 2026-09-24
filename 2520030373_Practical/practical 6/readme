@@ -1,0 +1,4 @@
+a) Client-Server using FIFO
+A FIFO (Named Pipe) is used to allow two processes to communicate. Here, the client sends a message to the server, and the server reads it and sends a reply back. FIFO follows the First-In, First-Out order, so messages are handled in the order they arrive.
+b) Signal Handling
+A signal is a way of notifying a process that something has happened. The program uses SIGINT, SIGTERM, and SIGUSR1 and handles them using a signal handler. When any of these signals is received, the handler runs and displays a message. This is called asynchronous event handling because the signal can arrive while the program is running.
