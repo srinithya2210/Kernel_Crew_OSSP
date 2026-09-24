@@ -1,0 +1,4 @@
+a) File Copy using System Calls
+System calls are used by a program to communicate with the kernel. Here, open() opens the file, read() reads its contents, write() copies the contents to another file, and close() closes the files. When a system call is made, control moves from user space to kernel space, the kernel performs the operation, and then control returns to the program.
+b) Using strace
+strace is used to trace the system calls made by a program. For cat sample.txt, it shows calls such as open(), read(), write(), and close(). These calls are handled by the kernel to open the file, read its contents, display them, and finally close the file.
