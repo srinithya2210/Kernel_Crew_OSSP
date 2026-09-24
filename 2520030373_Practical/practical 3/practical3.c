@@ -1,29 +1,21 @@
-#include <stdio.h>
 #include <unistd.h>
+#include <stdio.h>
 int main()
 {
 int pid;
-printf("Before fork\n");
-printf("PID: %d\n", getpid());
-printf("PPID: %d\n", getppid());
 pid = fork();
 if(pid == 0)
 {
-printf("\nChild process\n");
-printf("PID: %d\n", getpid());
-printf("PPID: %d\n", getppid());
-printf("Child process is running\n");
+printf("Child Process\n");
+printf("Child process id is %d\n", getpid());
 }
 else if(pid > 0)
 {
-printf("\nParent process\n");
-printf("PID: %d\n", getpid());
-printf("PPID: %d\n", getppid());
-printf("Parent process is running\n");
+printf("Parent Process\n");
+printf("Parent process id is %d\n", getppid());
 }
-else
+else if(pid < 0)
 {
-printf("Fork failed\n");
+printf("Failed process\n");
 }
-return 0;
 }
