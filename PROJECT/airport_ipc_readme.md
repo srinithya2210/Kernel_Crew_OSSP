@@ -659,9 +659,9 @@ After completing the project, the system should demonstrate:
 
 | Name | Roll Number | Responsibility |
 |---|---|---|
-| M Sri Nithya | 2520030447 | Frontend development, GitHub repository management, integration and documentation support |
-| G Jahnavi | 2520030483 | Documentation and PPT preparation |
+| M Sri Nithya | 2520030447 | Frontend development, GitHub repository management |
 | P Yasasri | 2520030373 | Linux/C IPC implementation and testing |
+| G Jahnavi | 2520030483 | Documentation and PPT preparation |
 
 ### Team Coordination
 
